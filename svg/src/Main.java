@@ -28,5 +28,22 @@ public class Main {
         seg.b.y=4;
 
         System.out.println("Seg len: "+seg.length());
+
+
+
+    }
+    public static Segment maxSegment(Segment[] arr)
+    {
+        if (arr.length==0) return null;
+
+        Segment max = arr[0];
+        for(int i=1;i<arr.length;i++)
+        {
+            if(arr[i].length() > max.length())
+            {
+                max=arr[i];
+            }
+        }
+        return max;
     }
 }
