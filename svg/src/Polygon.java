@@ -47,7 +47,7 @@ public class Polygon {
         }
         return new BoundingBox(minX,minY,maxX-minX,maxY-minY);
     }
-
+//gg
     @Override
     public String toString() {
         StringBuilder s = new StringBuilder();
