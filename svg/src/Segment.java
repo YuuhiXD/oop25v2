@@ -22,5 +22,12 @@ public class Segment {
         }
         return max;
     }
+    public String toSegmentString(){
+        return "("+a.x+" , "+a.y+" , "+b.x+", " +b.y+")";
+    }
+    public String toSegmentSvg()
+    {
+        return "<rect x=\""+a.x+"\" y=\""+a.y+"\" rx=\""+b.x+"\" ry=\""+b.y+"\" width=\"150\" height=\"150\" style=\"fill:red;stroke:black;stroke-width:5;opacity:0.5\" />";
+    }
 }
 

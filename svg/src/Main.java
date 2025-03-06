@@ -41,7 +41,8 @@ public class Main {
 
         Segment longest = Segment.maxSegment(tab);
         System.out.println("longest: " + longest.length());
-
+        System.out.println(seg.toSegmentString());
+        System.out.println(seg.toSegmentSvg());
     }
 }
 
