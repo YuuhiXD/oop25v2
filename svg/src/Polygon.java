@@ -40,6 +40,6 @@ public class Polygon {
     {
         return "<polygon points=\""+
                 this
-                +"\" style=\"fill:lime;stroke:purple;stroke-width:3\" />";
+                +"\" style=\"fill:none;stroke:purple;stroke-width:3\" />";
     }
 }
