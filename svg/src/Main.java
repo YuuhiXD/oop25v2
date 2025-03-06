@@ -37,6 +37,8 @@ public class Main {
         polyCopy.setPoint(2,-100, -30);
         System.out.println("Scena SVG");
         System.out.println(scene.toSvg());
+
+        System.out.println(polyCopy.boundingBox());
 //        p.x = 5.0;
 //        p.y = 3.0;
 //        System.out.println("(" + p.x + "," + p.y + ")");
