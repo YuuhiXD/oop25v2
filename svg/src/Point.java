@@ -9,10 +9,6 @@ public class Point {
         this.y=y;
     }
 
-    public Point() {
-        x=0;
-        y=0;
-    }
 
     public Point(Point other)
     {
@@ -28,9 +24,9 @@ public class Point {
 
     //setter
 
-    public void setX(double X)
-    {
-        this.x=x;
+
+    public void setX(double x) {
+        this.x = x;
     }
 
     public double getY() {
@@ -39,6 +35,10 @@ public class Point {
 
     public void setY(double y) {
         this.y = y;
+    }
+    public Point() {
+        x=0;
+        y=0;
     }
 
     @Override

@@ -4,6 +4,8 @@ public class Main {
         Point p1 = new Point(30,40);
         Point p2 = new Point();
         p2.setY(40);
+
+
         System.out.println(p1);
         System.out.println(p2);
 
@@ -12,6 +14,20 @@ public class Main {
         p2.setX(60);
         System.out.println(seg);
 
+        Point[] arr={p1, p2, p1};
+        Polygon poly=new Polygon(arr);
+        System.out.println(poly);
+        arr[2]=new Point(30,0);
+        System.out.println(poly);
+
+        Polygon polyCopy = new Polygon(poly);
+        System.out.println(polyCopy);
+
+        poly.setPoint(1,0,40);
+        System.out.println("Poly: " +poly);
+        System.out.println("Kopia:" +polyCopy);
+
+        System.out.println(polyCopy.toSvg());
 //        p.x = 5.0;
 //        p.y = 3.0;
 //        System.out.println("(" + p.x + "," + p.y + ")");
