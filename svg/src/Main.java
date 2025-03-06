@@ -6,6 +6,12 @@ public class Main {
         p2.setY(40);
         System.out.println(p1);
         System.out.println(p2);
+
+        Segment seg = new Segment(p1,p2);
+        System.out.println(seg);
+        p2.setX(60);
+        System.out.println(seg);
+
 //        p.x = 5.0;
 //        p.y = 3.0;
 //        System.out.println("(" + p.x + "," + p.y + ")");
@@ -46,7 +52,7 @@ public class Main {
 //        Segment longest = Segment.maxSegment(tab);
 //        System.out.println("longest: " + longest.length());
 //        System.out.println(seg.toSegmentString());
-//        System.out.println(seg.toSegmentSvg());
+//        System.out.println(seg);
     }
 }
 

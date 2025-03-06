@@ -1,8 +1,13 @@
 import static java.lang.Math.pow;
 
 public class Segment {
-    public Point a;
-    public Point b;
+    private final Point a;
+    private final Point b;
+
+    public Segment(Point a, Point b) {
+        this.a = new Point(a);
+        this.b = new Point(b);
+    }
 
     public double length()
     {
@@ -22,9 +27,12 @@ public class Segment {
         }
         return max;
     }
-    public String toSegmentString(){
-        return "("+ a.getX()+" , "+ a.getY()+" , "+ b.getX()+", " + b.getY()+")";
+
+    @Override
+    public String toString() {
+        return "{" + "a=" + a + ", b=" + b + '}';
     }
+
     public String toSegmentSvg()
     {
         return "<rect x=\""+ a.getX()+"\" y=\""+ a.getY()+"\" rx=\""+ b.getX()+"\" ry=\""+ b.getY()+"\" width=\"150\" height=\"150\" style=\"fill:red;stroke:black;stroke-width:5;opacity:0.5\" />";

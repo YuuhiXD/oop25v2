@@ -13,6 +13,12 @@ public class Point {
         x=0;
         y=0;
     }
+
+    public Point(Point other)
+    {
+        this.x=other.x;
+        this.y=other.y;
+    }
     //getter
 
     public double getX()
