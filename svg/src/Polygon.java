@@ -47,7 +47,8 @@ public class Polygon {
         }
         return new BoundingBox(minX,minY,maxX-minX,maxY-minY);
     }
-//gg
+//TODO: dodać klasę style z polami fill, stroke, stroke_width
+    // TODO: dodać pole style w tej klasie i zamienić atrybut style poniżej
     @Override
     public String toString() {
         StringBuilder s = new StringBuilder();

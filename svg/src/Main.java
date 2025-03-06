@@ -45,7 +45,7 @@ public class Main {
         System.out.println(polyCopy.boundingBox());
 
         scene.save("rysunek.svg");
-        //gg
+        //TODO: utworzyć obiekt style i przypisać do utworzonych polygonów(referencja) a następnie style w main i zaobserwować zmiany we wszystkich wielokątach
 //        p.x = 5.0;
 //        p.y = 3.0;
 //        System.out.println("(" + p.x + "," + p.y + ")");
