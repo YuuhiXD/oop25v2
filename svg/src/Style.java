@@ -1,3 +1,5 @@
+import java.util.Locale;
+
 public class Style {
     final public String fillColor;
     final public String strokeColor;
@@ -8,5 +10,9 @@ public class Style {
         this.strokeColor = strokeColor;
         this.strokeWidth = strokeWidth;
     }
-    
+
+    public String toSvg()
+    {
+        return String.format(Locale.ENGLISH, "style=\"fill:%s")
+    }
 }

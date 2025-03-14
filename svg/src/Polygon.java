@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class Polygon {
     private Point[] vertices;
 
-    public Polygon(Point[] vertices) {
+    public Polygon(Point[] vertices, Style style) {
         this.vertices = new Point[vertices.length];
         for(int i=0;i<vertices.length;i++)
         {
