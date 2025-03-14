@@ -64,17 +64,16 @@ public class SvgScene {
         FileWriter writer = new FileWriter(filePath);
         BoundingBox bb = boundingBox();
         writer.write("<svg width=\""+bb.width()+"\" height=\""+bb.heigth());
-        writer.write("\"viewBox=\""+bb.x()+" "+bb.y()+" "+bb.width()+" "+bb.heigth()+"\" xmlns=\"http://www.w3.org/2000/svg\">\n");
+        writer.write("\" viewBox=\""+bb.x()+" "+bb.y()+" "+bb.width()+" "+bb.heigth()+"\" xmlns=\"http://www.w3.org/2000/svg\">\n");
         for(Polygon p : polygons)
         {
             if (p!=null)
             {
                 writer.write(p.toSvg()+"\n");
             }
-
         }
         writer.write("</svg>");
         writer.close();
     }
-    //gg
+
 }

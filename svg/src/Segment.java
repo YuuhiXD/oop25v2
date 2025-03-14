@@ -27,7 +27,7 @@ public class Segment {
         }
         return max;
     }
-//gg
+
     @Override
     public String toString() {
         return "{" + "a=" + a + ", b=" + b + '}';
